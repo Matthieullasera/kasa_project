@@ -1,8 +1,11 @@
 import React from 'react';
 
-function Card({ title }) {
+function Card({ title, cover }) {
   return (
-    <div className="card">
+    <div 
+      className="card" 
+      style={{ backgroundImage: `url(${cover})` }}
+    >
       <div className="card-content">
         <h2>{title}</h2>
       </div>
@@ -11,3 +14,4 @@ function Card({ title }) {
 }
 
 export default Card;
+

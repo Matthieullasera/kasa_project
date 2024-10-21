@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useState} from 'react';
 import Card from './Card';
+import logement from '../logements.json';
 
 function Grid() {
-  const locations = [
-    { title: 'Titre de la location 1' },
-    { title: 'Titre de la location 2' },
-    { title: 'Titre de la location 3' },
-    { title: 'Titre de la location 4' },
-    { title: 'Titre de la location 5' },
-    { title: 'Titre de la location 6' }
-  ];
+  const [locations] = useState(logement)
 
   return (
     <section className="grid">
-      {locations.map((location, index) => (
-        <Card key={index} title={location.title} />
-      ))}
+      {locations.length > 0 ? ( 
+        locations.map((location, index) => (
+          <Card key={index} title={location.title} cover={location.cover} />
+        ))
+      ) : (
+        <p>Chargement des données...</p>
+      )}
     </section>
   );
 }

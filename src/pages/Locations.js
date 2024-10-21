@@ -1,7 +1,7 @@
 import React from 'react';
 
-function FicheLogement() {
+function Locations() {
   return <h1>Page Fiche Logement</h1>;
 }
 
-export default FicheLogement;
+export default Locations;
