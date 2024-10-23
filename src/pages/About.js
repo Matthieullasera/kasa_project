@@ -1,7 +1,11 @@
 import React from 'react';
+import Accordion from '../components/Accordion';
+import '../css/Accordion.css'
 
 function About() {
-  return <h1>Page À Propos</h1>;
+  return (<>
+          <Accordion/>
+          </>);
 }
 
 export default About;
