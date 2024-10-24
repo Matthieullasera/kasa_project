@@ -3,8 +3,11 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Accordion from '../components/Accordion';
-import logements from '../logements.json';  
-import '../css/Locations.css';  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
+import logements from '../logements.json';
+import '../css/Locations.css'
 function Locations() {
   const { id } = useParams();
   const logement = logements.find((log) => log.id === id);
@@ -40,9 +43,13 @@ function Locations() {
             </div>
             <div className="rating">
               {Array.from({ length: 5 }, (v, i) => (
-                <span key={i} className={i < logement.rating ? "star filled" : "star"}>★</span>
+                <FontAwesomeIcon 
+                  key={i} 
+                  icon={i < logement.rating ? solidStar : regularStar} 
+                  color={i < logement.rating ? "#FF6B6B" : "#ccc"} 
+                />
               ))}
-          </div>
+            </div>
           </div>
         </section>
         <section className="accordions">

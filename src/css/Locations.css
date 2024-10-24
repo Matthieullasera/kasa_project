@@ -81,11 +81,13 @@
   .rating {
     display: flex;
     justify-content: right;
+    margin-top: 10px;
   }
   
-  .star {
-    font-size: 24px;
-    color: #cccccc;
+  .rating svg{
+    margin-left: 7px;
+    width: 100%;
+    height: 20px;
   }
   
   .star.filled {

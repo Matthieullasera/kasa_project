@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,7 @@ function Accordion({ title, children }) {
     <div className="accordion">
       <div className="accordion-header" onClick={toggleAccordion}>
         <p>{title}</p>
-        <span>{isOpen ? '▲' : '▼'}</span>
+        <FontAwesomeIcon icon={isOpen ? faChevronDown : faChevronUp} />
       </div>
       {isOpen && <div className="accordion-content">{children}</div>}
     </div>
