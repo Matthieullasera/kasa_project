@@ -3,9 +3,8 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Accordion from '../components/Accordion';
-import logements from '../logements.json';  // Import du fichier JSON
-import '../css/Locations.css';  // Ajoute le fichier CSS pour les styles spécifiques
-
+import logements from '../logements.json';  
+import '../css/Locations.css';  
 function Locations() {
   const { id } = useParams();
   const logement = logements.find((log) => log.id === id);
