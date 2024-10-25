@@ -1,25 +1,22 @@
 .apropos-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .accordions {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-.accordion-header {
-    border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-  .accordion-content {
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .accordion-content p {
-    display: flex;
-    justify-content: flex-start;
-  }
+.apropos-container .accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.apropos-container .accordion-header {
+  border-radius: 15px;
+}
+.apropos-container .accordion-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+.apropos-container .accordion-content p {
+  display: flex;
+  justify-content: flex-start;
+}/*# sourceMappingURL=about.css.map */

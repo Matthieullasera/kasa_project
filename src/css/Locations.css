@@ -1,125 +1,68 @@
-/* Layout général */
 .locations-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .locations-banner {
-    position: relative;
-    width: 100%;
-  }
-  
-  .banner-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .image-pagination {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .left-info h1 {
-    color: #FF6B6B;
-    font-weight: 500;
-    margin-bottom: 0px;
-
-  }
-  .location-title {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-  }
-  
-  .locations-info {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    
-  }
-  
-  .tags {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .tag {
-    background-color: #FF6B6B;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 12px;
-  }
-  
-  .host-info {
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .host-info p {
-     color: #FF6B6B;
-     margin-bottom: 0px;
-  }
-  .host-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-  
-  .rating {
-    display: flex;
-    justify-content: right;
-    margin-top: 10px;
-  }
-  
-  .rating svg{
-    margin-left: 7px;
-    width: 100%;
-    height: 20px;
-  }
-  
-  .star.filled {
-    color: #FF6B6B;
-  }
-  .accordions {
-    display: flex;
-    justify-content: space-between;
-    gap: 150px;
-    margin-top: 20px;
-  }
-  
-  .accordion {
-    flex: 1; /* Chaque accordéon prendra toute la place disponible */
-    border-radius: 5px;
-  }
-  
-  .accordion-header {
-    background-color: #FF6B6B;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-  }
-  
-  .accordion-content {
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.locations-container .locations-banner {
+  position: relative;
+  width: 100%;
+}
+.locations-container .locations-banner .banner-image {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.locations-container .locations-banner .image-pagination {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.locations-container .locations-info {
+  display: flex;
+  justify-content: space-between;
+}
+.locations-container .locations-info .location-title {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.locations-container .locations-info .tags {
+  display: flex;
+  gap: 10px;
+}
+.locations-container .locations-info .tags .tag {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.locations-container .host-info {
+  display: flex;
+  align-items: center;
+}
+.locations-container .host-info p {
+  color: #FF6B6B;
+}
+.locations-container .host-info .host-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.locations-container .host-info .rating {
+  display: flex;
+  margin-top: 10px;
+}
+.locations-container .host-info .rating svg {
+  margin-left: 7px;
+  height: 20px;
+}
+.locations-container .host-info .rating .star.filled {
+  color: #FF6B6B;
+}/*# sourceMappingURL=Locations.css.map */

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/404.css';  // Le fichier CSS pour les styles
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 

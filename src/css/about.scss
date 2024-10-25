@@ -1,0 +1,26 @@
+.apropos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .accordion-header {
+    border-radius: 15px;
+  }
+
+  .accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+
+    p {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}

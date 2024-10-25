@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Accordion from '../components/Accordion';
@@ -7,13 +7,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 import logements from '../logements.json';
-import '../css/Locations.css'
+
 function Locations() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const logement = logements.find((log) => log.id === id);
 
+  useEffect(() => {
+    if (!logement) {
+      navigate('/404'); 
+    }
+  }, [logement, navigate]);
+
   if (!logement) {
-    return <h1>Logement non trouvé</h1>;
+    return null;  
   }
 
   return (

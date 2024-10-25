@@ -1,0 +1,20 @@
+
+.accordion-header {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+.accordion-header p {
+    margin-left: 10px ;
+    font-weight: 600;
+  }
+.accordion-content p {
+    margin-left: 10px;
+  }
+  
