@@ -8,19 +8,18 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
-  }
-
-  .accordion-header {
-    border-radius: 15px;
-  }
-
-  .accordion-content {
-    padding: 15px;
-    background-color: #f9f9f9;
-
-    p {
-      display: flex;
-      justify-content: flex-start;
+    .accordion-header {
+      border-radius: 15px;
+    }
+  
+    .accordion-content {
+      padding: 15px;
+      background-color: #f9f9f9;
+  
+      p {
+        display: flex;
+        justify-content: flex-start;
+      }
     }
   }
 }

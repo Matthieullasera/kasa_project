@@ -28,6 +28,7 @@
   .locations-info {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 
     .location-title {
       flex-direction: column;
@@ -37,6 +38,7 @@
     .tags {
       display: flex;
       gap: 10px;
+      margin-bottom: 10px;
 
       .tag {
         background-color: #FF6B6B;
@@ -76,5 +78,11 @@
         color: #FF6B6B;
       }
     }
+  }
+  .accordions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 }
