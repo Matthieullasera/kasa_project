@@ -1,61 +1,31 @@
-// Styles principaux pour l'application
-.App {
-  text-align: center;
-  margin-left: 80px;
-  margin-right: 80px;
+// Importation de la police Montserrat pour tout le site
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-  &-logo {
-    height: 40vmin;
-    pointer-events: none;
-
-    @media (prefers-reduced-motion: no-preference) {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-  &-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-
-  &-link {
-    color: #61dafb;
-  }
-}
-
-// Animation pour le logo de l'application
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-// Styles pour le body
+// Styles globaux
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-left: 200px;
+  padding-right: 200px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-// Header
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+// Styles pour le header
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 40px;
 
   .logo {
     img {
-      width: 200px;
+      width: 250px;
     }
   }
 
@@ -64,16 +34,21 @@ header {
       list-style: none;
       display: flex;
       gap: 20px;
+      
+
     }
 
     a {
       color: black;
       font-weight: 600;
+      font-size :x-large;
+      margin-left: 70px;
+      text-decoration: none;
     }
   }
 }
 
-// Styles de la bannière
+// Styles pour la bannière
 .banner {
   position: relative;
   text-align: center;
@@ -86,7 +61,7 @@ header {
     width: 100%;
 
     img {
-      width: 100%; 
+      width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 20px;
@@ -105,16 +80,14 @@ header {
 
   h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 35%;
     color: white;
-    font-size: 2rem;
-    z-index: 1;
+    font-size:xx-large;
   }
 }
 
-// Grid and cards
+// Styles pour la grille et les cartes
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -132,8 +105,8 @@ header {
     justify-content: center;
 
     .card {
-      width: 90%;
-      height: 200px;
+      width: 100%;
+      height: 250px;
       background-size: cover;
       background-position: center;
       border-radius: 10px;
@@ -142,7 +115,7 @@ header {
       justify-content: center;
       color: white;
       margin-bottom: 30px;
-      aspect-ratio: 16/9;  // Assure un ratio d'aspect fixe pour toutes les cartes
+      aspect-ratio: 16/9;
       overflow: hidden;
 
       .card-content {
@@ -159,16 +132,24 @@ header {
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover; // Remplir le conteneur de la carte sans déformation
+        object-fit: cover;
       }
     }
   }
 }
 
-// Footer
+// Styles pour le footer
 footer {
   text-align: center;
   padding: 20px;
   background-color: black;
   color: white;
 }
+
+// Importation des autres fichiers SCSS pour les sections spécifiques
+@import '404';
+@import 'about';
+@import 'accordion';
+@import 'index';
+@import 'locations';
+@import 'tag';

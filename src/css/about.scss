@@ -1,6 +1,4 @@
 .apropos-container {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px;
 
   .accordions {
@@ -8,6 +6,10 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
+
+    .accordion{
+      width: 100%;
+    }
     .accordion-header {
       border-radius: 15px;
     }
@@ -22,4 +24,8 @@
       }
     }
   }
+}
+
+.banner {
+  
 }
