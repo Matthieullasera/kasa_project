@@ -146,6 +146,63 @@ footer {
   color: white;
 }
 
+@media (max-width : 768px) {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 10px; 
+  }
+  
+  header {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  
+    .logo img {
+      width: 150px;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  
+    nav a {
+      font-size: large;
+      margin-left: 0;
+    }
+  }
+  
+  .banner {
+    .image-container img {
+      height: 150px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+    a {
+      .card {
+        height: 200px
+
+      }
+
+
+    }
+  }
+  
+
+}
+
 // Importation des autres fichiers SCSS pour les sections spécifiques
 @import '404';
 @import 'about';

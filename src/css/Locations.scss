@@ -120,3 +120,69 @@
     justify-content: space-between;
   }
 }
+
+
+@media (max-width: 768px) {
+  .locations-container {
+    padding: 10px;
+
+
+    .locations-banner {
+      .banner-image {
+        height: 200px;
+      }
+
+      .carousel-button {
+        font-size: 20px;
+  
+      }
+    } 
+
+
+    .accordions {
+      flex-direction: column;
+
+      .accordion{
+        width: 100%;
+        .accordion-header {
+          padding: 0px;
+        padding-right: 5px;        
+      }
+
+      }
+    }
+
+    .locations-info {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+
+      .right-info {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+      .rating{
+        margin-right: 120px;
+      }
+      .tags .tag {
+        padding: 5px;
+        font-size: 0.8rem;
+      }
+
+      .rating svg {
+        height: 15px;
+      }
+
+      .host-info 
+        .host-avatar {
+          width: 40px;
+          height: 40px;
+          margin-left: 2px;
+        p {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
