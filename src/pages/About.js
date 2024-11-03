@@ -1,16 +1,20 @@
 import React from 'react';
 import Header from '../components/Header';
-import Banner from '../components/BannerAbout';
 import Footer from '../components/Footer';
 import Accordion from '../components/Accordion';
+import Banner from '../components/Banner';
+
 function APropos() {
   return (
     <>
       <Header />
       <main className="apropos-container">
-        <Banner/>
+        <Banner
+          image={`${process.env.PUBLIC_URL}/Image_source_2.jpg`}
+          showText={false}
+        />
         <section className="accordions">
-        <Accordion title="Fiabilité">
+          <Accordion title="Fiabilité">
             <p>
               Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
               et toutes les informations sont régulièrement vérifiées par nos équipes.

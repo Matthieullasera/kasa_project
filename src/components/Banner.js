@@ -1,16 +1,15 @@
 import React from 'react';
 
-function Banner() {
+function Banniere({ image,text, showText }) {
   return (
-<section className="banner">
-  <div className="image-container">
-    <img src={`${process.env.PUBLIC_URL}/e270fc8fc902a1eb738458e7b29c1899.jpg`} alt="Bannière" />
-    <div className="overlay"></div>
-  </div>
-  <h1>Chez vous, partout et ailleurs</h1>
-</section>
-
+    <section className="banner">
+      <div className="image-container">
+        <img src={image} alt="Bannière" />
+        <div className="overlay"></div>
+      </div>
+      {showText && <h1>{text}</h1>}
+    </section>
   );
 }
 
-export default Banner;
+export default Banniere;

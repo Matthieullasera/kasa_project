@@ -38,6 +38,7 @@ function Locations() {
     setCurrentImageIndex((prevIndex) => (prevIndex === totalImages - 1 ? 0 : prevIndex + 1));
   };
 
+  
   return (
     <>
       <Header />

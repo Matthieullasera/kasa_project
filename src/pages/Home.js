@@ -9,12 +9,15 @@ function Home() {
     <>
       <Header />
       <main>
-        <Banner />
+        <Banner
+          image={`${process.env.PUBLIC_URL}/e270fc8fc902a1eb738458e7b29c1899.jpg`}
+          text="Chez vous, partout et ailleurs"
+          showText={true}
+        />
         <Grid />
       </main>
       <Footer />
     </>
-
   );
 }
 
